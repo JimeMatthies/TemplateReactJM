@@ -1,19 +1,11 @@
 import React from 'react';
+import Footer from './components/Footer';
 import './App.css';
 
-/* export function Main({ jumbotron, navbar, cards, footer }) {
+export function Main({ footer }) {
     return (
         <>
-            <h1>JM was Here!</h1>
-        </>
-    )
-} */
-const Main = () => {
-    return (
-        <>
-            <h1>JM was Here!</h1>
+            <Footer footer={footer} />
         </>
     )
 }
-
-export default Main;
