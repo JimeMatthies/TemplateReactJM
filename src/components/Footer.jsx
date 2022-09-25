@@ -5,7 +5,7 @@ const Footer = ({ footer }) => {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-lg-12 text-center pt-3 fixed-bottom text-white">
+                <div className="footer col-lg-12 text-center pt-3 fixed-bottom text-white">
                     <p>Copyright &copy; {footer.text} </p>
                 </div>
             </div>
