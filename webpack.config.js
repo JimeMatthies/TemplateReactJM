@@ -34,6 +34,7 @@ module.exports = {
     },
     devServer: {
         allowedHosts: 'all',
+        historyApiFallback: { index: "/", disableDotRule: true },
         compress: true,
         port: 3000,
         open: true,
