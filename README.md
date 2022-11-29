@@ -183,7 +183,7 @@ Definir "devServer" en el ***webpack.config.js***
         ...
         devServer: {
             allowedHosts: 'all',
-            historyApiFallback: true,
+            historyApiFallback: { index: "/", disableDotRule: true },
             compress: true,
             port: 3000,
             open: true,
