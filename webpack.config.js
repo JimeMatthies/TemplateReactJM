@@ -1,6 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 const path = require('path');
 
 module.exports = {
@@ -34,6 +35,7 @@ module.exports = {
     },
     devServer: {
         allowedHosts: 'all',
+        historyApiFallback: { index: "/", disableDotRule: true },
         compress: true,
         port: 3000,
         open: true,
@@ -47,6 +49,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'style.css'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new Dotenv()
     ]
 }

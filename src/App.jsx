@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 const App = ({ copyright }) => {
     return (
         <>
+            <Home/>
             <Footer footer={copyright} />
         </>
     )
